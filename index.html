@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Define the character set -->
+    <meta charset="UTF-8" />
+    <!-- Ensure proper scaling on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set the title of the webpage -->
+    <title>Toblerone</title>
+    <!-- Meta description for SEO -->
+    <meta
+      name="description"
+      content="A website dedicated to Toblerone, the iconic Swiss chocolate bar. Learn about its history, flavors, and more."
+    />
+    <!-- Meta keywords for SEO -->
+    <meta
+      name="keywords"
+      content="Toblerone, chocolate, Swiss chocolate, confectionery, sweets"
+    />
+    <!-- Author of the webpage -->
+    <meta name="author" content="Swaraj" />
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Link to Google Fonts stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header section containing navigation -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <!-- Logo image -->
+            <img src="./images/tb_vector.png" alt="" height="50" width="100" />
+          </li>
+          <!-- Navigation links -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#facts">About</a></li>
+          <li><a href="#nutrition">Nutrition</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Home section with introductory content -->
+      <section id="home" class="intro">
+        <div class="content">
+          <h1>Toblerone</h1>
+          <!-- Image of Toblerone chocolate -->
+          <img
+            src="images/tb1.jpg"
+            alt="Toblerone Chocolate"
+            class="animated-image image-one"
+          />
+          <p>
+            Toblerone is a Swiss chocolate brand known for its distinctive
+            shape, which is a series of joined triangular prisms. The chocolate
+            is made from Swiss milk, honey, and almond nougat.
+          </p>
+        </div>
+      </section>
+      <!-- About section with historical facts -->
+      <section id="facts" class="facts">
+        <h2>About</h2>
+        <div class="content">
+          <!-- Image of Toblerone factory -->
+          <img
+            src="images/tb2.jpg"
+            alt="Toblerone Factory"
+            class="animated-image image-two"
+          />
+          <ul>
+            <li>Toblerone was created by Theodor Tobler in 1908.</li>
+            <li>
+              The shape of Toblerone is believed to be inspired by the
+              Matterhorn mountain in Switzerland.
+            </li>
+            <li>
+              Toblerone is available in various flavors, including milk
+              chocolate, dark chocolate, and white chocolate.
+            </li>
+            <li>
+              The name Toblerone is a portmanteau combining Tobler's name with
+              "torrone," the Italian word for honey and almond nougat.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Nutrition section with nutritional information -->
+      <section id="nutrition" class="nutrition">
+        <h2>Nutritional Information</h2>
+        <div class="content">
+          <!-- Image of Toblerone ingredients -->
+          <img
+            src="images/tb4.avif"
+            alt="Toblerone Ingredients"
+            class="animated-image image-three"
+          />
+          <!-- Nutritional information table -->
+          <table>
+            <tr>
+              <th>Component</th>
+              <th>Amount per serving (1 oz)</th>
+            </tr>
+            <tr>
+              <td>Calories</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>Fat</td>
+              <td>8g</td>
+            </tr>
+            <tr>
+              <td>Sugar</td>
+              <td>15g</td>
+            </tr>
+            <tr>
+              <td>Protein</td>
+              <td>2g</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section with contact form -->
+    <footer>
+      <div class="footer-content">
+        <!-- Toblerone logo -->
+        <img src="images/tb3.jpeg" alt="Toblerone Logo" />
+        <p>&copy; 2024 Toblerone Inc.</p>
+        <!-- Contact form -->
+        <form id="contact">
+          <h3>Contact Us</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </footer>
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

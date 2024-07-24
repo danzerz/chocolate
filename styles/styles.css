@@ -1,0 +1,259 @@
+body {
+  /* Set the font family, remove default margins and padding, center align items, set background color and text color */
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(120, 95, 76);
+  background-size: cover;
+  color: #333;
+}
+
+header {
+  /* Style the header: full width, center text, add padding, set background and text color, make it fixed */
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(63, 47, 47);
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  /* Style the navigation list: remove default padding and margin, display items in a row, center justify */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  /* Add margin between navigation items */
+  margin: 0 15px;
+}
+
+nav ul li a {
+  /* Style the navigation links: set color, remove underline, make text bold, add transition */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  /* Change link color on hover */
+  color: #ffe4e1;
+}
+
+h1 {
+  /* Style the main heading: set font size and margin */
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+main {
+  /* Style the main content area: set width, max width, margin, background color, padding, border radius, shadow */
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.intro,
+.facts,
+.nutrition {
+  /* Style sections: add margin, padding, background color, border radius, and flex display */
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.facts h2 {
+  /* Add padding to the heading in the facts section */
+  padding: 20px;
+}
+
+.intro {
+  /* Style the intro section: set top margin and background color */
+  margin-top: 10em;
+  background-color: #d4af37;
+}
+
+.content {
+  /* Style the content: flex display, wrap, justify space between, center align */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content ul {
+  /* Style unordered lists inside content: set background color, border radius, padding */
+  background-color: #d4af37;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.nutrition {
+  /* Style the nutrition section: set background color */
+  background-color: #d4af37;
+}
+
+.content .animated-image {
+  /* Style images: set width, auto height, and border radius */
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-one {
+  /* Apply fadeIn animation to the first image */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.image-two {
+  /* Apply slideInLeft animation to the second image */
+  animation: slideInLeft 2s ease-in-out forwards;
+}
+
+.image-three {
+  /* Apply zoomIn animation to the third image */
+  animation: zoomIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  /* Define fadeIn animation: from opacity 0 to 1 */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  /* Define slideInLeft animation: from translateX(-100%) to 0 */
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  /* Define zoomIn animation: from scale 0.5 to 1 */
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+h2 {
+  /* Style subheadings: center text, set font size and margin */
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+ul {
+  /* Style unordered lists: remove padding */
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  /* Style list items: set margin, font size, line height */
+  margin: 10px 0;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+table {
+  /* Style tables: set width, collapse borders, margin top */
+  width: 45%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  /* Style table headers and cells: remove border, set text alignment, padding, font size, background color */
+  border: none;
+  text-align: left;
+  padding: 12px;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+footer {
+  /* Style footer: set width, background color, text color, text alignment, padding, margin top */
+  width: 100%;
+  background-color: rgba(63, 47, 47, 0.9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-content {
+  /* Style footer content: flex display, column direction, center align */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content img {
+  /* Style footer images: set width, auto height */
+  width: 50px;
+  height: auto;
+}
+
+.footer-content form {
+  /* Style footer form: flex display, column direction, center align, margin top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-content label,
+.footer-content input {
+  /* Style form labels and inputs: set margin, width, max width, font size, padding */
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1em;
+  padding: 8px;
+}
+
+.footer-content button {
+  /* Style form button: set padding, background color, text color, border, cursor, border radius, transition */
+  padding: 10px 20px;
+  background-color: white;
+  color: rgba(63, 47, 47, 0.9);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.footer-content button:hover {
+  /* Change button background color on hover */
+  background-color: #f0f0f0;
+}
